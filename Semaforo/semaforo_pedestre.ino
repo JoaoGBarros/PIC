@@ -42,7 +42,6 @@ void changeLights(int crosstime){
 
 void loop(){
     int crosstime = 2000;
-    int tempo_de_espera = 5000;
     digitalWrite(led_verde, HIGH);
     digitalWrite(led_vermelho_pedestre, HIGH);
     
@@ -53,6 +52,6 @@ void loop(){
       Cross = 0;
       Cross = millis();
     }else{
-      printf("tempo menor q 5 segundos");
+      Serial.print("Ainda nao passou 5 segundos desde a ultima vez que apertou o botao");
     }
 }
